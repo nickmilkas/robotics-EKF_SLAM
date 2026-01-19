@@ -18,6 +18,18 @@ The project consists of:
 
 This section covers the Python-based 2D simulation and EKF-SLAM pipeline: differential-drive motion, simulated range–bearing sensing, and the full SLAM loop producing pose + map estimates.
 
+### Simulation view (robot, sensor, and landmarks)
+
+![Python simulation view (robot + landmarks + sensor)](pictures/robot_simulation_view.png)
+
+In the simulation:
+- The **robot is the black object**.
+- The **blue points indicate the real (ground-truth) positions of the landmarks/items** in the environment.
+
+### Trajectory and landmark estimation result
+
+The following plot compares the **real trajectory**, **odometry-only trajectory**, and the **EKF-SLAM trajectory**, together with the **observed landmarks**:
+
 ![Python EKF-SLAM results: real vs odometry vs EKF path + landmarks](pictures/paths_landmarks.png)
 
 ### Differential-drive motion model
